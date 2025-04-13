@@ -76,3 +76,29 @@ export class QuizzComponent implements OnInit {
   }
 
 }
+
+resultado: any;
+
+resultadosPossiveis = {
+  gato: {
+    titulo: 'Você é um Gato!',
+    descricao: 'Independente, curioso e adora um cochilo 😺',
+    imagem: 'assets/imgs/gato.png'
+  },
+  cachorro: {
+    titulo: 'Você é um Cachorro!',
+    descricao: 'Leal, brincalhão e ama companhia 🐶',
+    imagem: 'assets/imgs/cachorro.png'
+  },
+  coruja: {
+    titulo: 'Você é uma Coruja!',
+    descricao: 'Sábio, observador e ama a noite 🦉',
+    imagem: 'assets/imgs/coruja.png'
+  }
+};
+ngOnInit(): void {
+  // Aqui você pega o resultado calculado (ex: vindo do service)
+  const resultadoFinal = 'gato'; // Isso aqui viria do service real
+
+  this.resultado = this.resultadosPossiveis[resultadoFinal];
+}

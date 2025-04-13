@@ -5,6 +5,7 @@
 }
 
 .quizz_logo{
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,4 +73,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.resultado-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.resultado-container img {
+  width: 200px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-top: 1rem;
 }
